@@ -14,11 +14,14 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 
-    <title>Esercizi</title>
+    <title>Vue e-mail list</title>
 </head>
 <body>
     <div id="app">
         <h1>Generatore automatico di mail</h1>
+        <div v-if="loading" class="spinner-border text-success" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
         <ul>
             <li v-for="mail in myMails">{{mail}}</li>
         </ul>
