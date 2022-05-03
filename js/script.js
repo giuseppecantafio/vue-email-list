@@ -6,6 +6,7 @@ const app = new Vue ({
         myMails: [],
         loading: true,
         index: 0,
+        stopIndex: 10
     },
 
     methods: {
